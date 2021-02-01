@@ -1,0 +1,13 @@
+<h1>All the Students </h1>
+
+<h2>Count: <%= Student.count %></h2>
+
+<ol>
+    <% @students.each do |student| %>
+
+        <li>
+            <p> <%= student.to_s %> </p>
+        </li>
+
+    <% end %>
+</ol>
